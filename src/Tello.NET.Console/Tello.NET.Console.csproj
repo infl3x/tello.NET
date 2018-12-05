@@ -6,7 +6,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\..\src\Tello.NET\Tello.NET\Tello.NET.csproj" />
+    <ProjectReference Include="..\Tello.NET\Tello.NET.csproj" />
   </ItemGroup>
 
 </Project>

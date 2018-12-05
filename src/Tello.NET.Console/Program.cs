@@ -47,7 +47,7 @@ namespace Tello.NET.Console
 			ITelloClient telloClient = new TelloClient(ipAddress, port);
 			telloClient.Connect();
 
-			Task.Factory.StartNew(() => telloClient.ListenForResponses(OnResponseReceived));
+			Task.Run(() => telloClient.ListenForResponses(OnResponseReceived));
 
 			CommandLine.WriteLine("Connected successfully!");
 
